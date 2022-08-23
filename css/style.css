@@ -1,6 +1,7 @@
 :root {
   --company-color: #2196f3;
   --grey-color: #757575;
+  --section-padding: 94px;
 }
 * {
   margin: 0;
@@ -42,6 +43,9 @@ img {
   padding: 0;
   margin: 0;
 }
+header {
+  border-bottom: 1px solid #ececec;
+}
 /* Menu&footer */
 .navigation {
   display: flex;
@@ -62,6 +66,13 @@ img {
 }
 .menu__a:hover {
   color: var(--company-color);
+}
+.menu__a__active {
+  color: var(--company-color);
+  text-decoration: none;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
 }
 .menu li:nth-child(2) {
   margin: 0 48px;
@@ -130,7 +141,8 @@ footer .container {
   text-align: center;
 }
 .section {
-  padding: 94px 0;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 .main__header {
   font-weight: 900;
@@ -144,6 +156,11 @@ footer .container {
   color: #ffffff;
   text-align: center;
 }
+.main__section .container {
+  flex-direction: column;
+  margin-top: calc(200px - var(--section-padding));
+  margin-bottom: calc(200px - var(--section-padding));
+}
 .order__button {
   background-color: var(--company-color);
   color: #ffffff;
@@ -151,13 +168,12 @@ footer .container {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  text-align: center;
-  align-items: center;
   border: 0;
   border-radius: 3px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  margin: 0 auto;
+  width: 200px;
+  height: 50px;
 }
 .description ul {
   display: flex;
@@ -210,6 +226,18 @@ footer .container {
   font-weight: 400;
 }
 /* portfolio */
+.portfolio .container {
+  flex-direction: column;
+}
+.portfolio__button__list {
+  display: inline-flex;
+  gap: 8px;
+}
+.p__list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .portfolio__button {
   background-color: #f5f4fa;
   font-weight: 500;
@@ -219,24 +247,33 @@ footer .container {
   text-align: center;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+  border-radius: 3px;
+  margin-bottom: 50px;
+  padding: 6px 24px;
 }
 .portfolio__button:hover {
   background-color: var(--company-color);
   color: #ffffff;
   border-radius: 3px;
 }
+.portfolio__list__a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #eeeeee;
+}
 .portfolio__first__p {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-top: 20px;
+  padding-left: 24px;
 }
 .portfolio__second__p {
   color: var(--grey-color);
   font-size: 16px;
   line-height: 1.87;
-}
-.portfolio__list__a {
-  text-decoration: none;
-  color: inherit;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
