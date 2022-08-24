@@ -26,7 +26,7 @@ body {
   list-style: none;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -147,7 +147,7 @@ footer .container {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  width: 694px;
+  max-width: 694px;
   height: 120px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -188,6 +188,9 @@ footer .container {
 }
 .description__p {
   color: var(--grey-color);
+}
+.description .container {
+  margin-bottom: -94px;
 }
 .we__do {
   display: flex;
@@ -230,6 +233,7 @@ footer .container {
 .portfolio__button__list {
   display: inline-flex;
   gap: 8px;
+  margin-bottom: 50px;
 }
 .p__list {
   display: inline-flex;
@@ -246,7 +250,6 @@ footer .container {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   border-radius: 3px;
-  margin-bottom: 50px;
   padding: 6px 24px;
 }
 .portfolio__button:hover {
