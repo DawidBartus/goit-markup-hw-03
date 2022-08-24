@@ -180,6 +180,9 @@ footer .container {
 .description li {
   width: 270px;
 }
+.section--no_space {
+  padding-bottom: 0px;
+}
 .description__header {
   font-size: 14px;
   font-weight: 700;
@@ -188,9 +191,6 @@ footer .container {
 }
 .description__p {
   color: var(--grey-color);
-}
-.description .container {
-  margin-bottom: -94px;
 }
 .we__do {
   display: flex;
